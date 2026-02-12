@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Online Shopping Store</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html">Online Shopping Store</a>
+      <nav class="nav">
+        <a id="userLink" href="login.html" class="btn ghost">Login</a>
+        <a href="register.html" class="btn ghost">Register</a>
+        <button id="cartBtn" class="btn">Cart (<span id="cartCount">0</span>)</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero card">
+      <h1>Bright deals, fast checkout</h1>
+      <p class="muted">A colorful, responsive demo store built with HTML/CSS/JS. Login/Register simulated with localStorage.</p>
+    </section>
+
+    <section class="products card">
+      <h2>Products</h2>
+      <div id="productsGrid" class="products-grid"></div>
+    </section>
+
+    <section class="cart card" id="cartPanel" aria-hidden="true">
+      <h2>Your Cart</h2>
+      <div id="cartList"></div>
+      <div class="cart-actions">
+        <div class="total">Total: $<span id="cartTotal">0.00</span></div>
+        <div>
+          <button id="checkoutBtn" class="btn accent">Checkout</button>
+          <button id="closeCart" class="btn ghost">Close</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 2026 Online Shopping Store — Demo. No real payments.</div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

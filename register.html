@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Register — Online Shopping Store</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main class="container auth-card">
+    <a class="brand" href="index.html">Online Shopping Store</a>
+    <h2>Create account</h2>
+    <form id="registerForm" class="card">
+      <label>Name
+        <input id="regName" required>
+      </label>
+      <label>Email
+        <input id="regEmail" type="email" required>
+      </label>
+      <label>Password
+        <input id="regPassword" type="password" required>
+      </label>
+      <div class="form-actions">
+        <button type="submit" class="btn">Register</button>
+        <a href="login.html" class="btn ghost">Sign in</a>
+      </div>
+      <p id="regMsg" class="muted"></p>
+    </form>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>
